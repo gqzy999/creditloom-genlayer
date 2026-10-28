@@ -1,0 +1,11 @@
+{
+  "protocol": "creditloom-1",
+  "network": 61999,
+  "sourceSha256": "3269814cdc2faa7c47661ca0298f43ece98c9033639b34f20076c555465b1713",
+  "address": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+  "owner": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+  "id": "atlas-1793167572872",
+  "state": "PUBLISHED",
+  "deploymentTransaction": "0x1e5a0e917b182f3df636bbde5d47e1cfd6c21d9e21f1bc5a2647964dbac8e425",
+  "publicationTransaction": "0xce8bcf8a021c0c4eb27e3f93d8ed111cbcfdd433e1b8db49de5c48322139b7a1"
+}

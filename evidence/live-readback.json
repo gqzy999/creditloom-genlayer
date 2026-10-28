@@ -1,0 +1,105 @@
+{
+  "kind": "CHAIN_READBACK",
+  "network": 61999,
+  "selection": {
+    "address": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+    "owner": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+    "id": "atlas-1793167572872"
+  },
+  "record": {
+    "approvals": [
+      "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "0x11cb2411b2537953bf96c912c51928564e846a5a",
+      "0x1084158bb63ad2b11368aece4ab15f85175e567c"
+    ],
+    "context": "A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.",
+    "digest": "d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0",
+    "id": "atlas-1793167572872",
+    "members": [
+      "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "0x11cb2411b2537953bf96c912c51928564e846a5a",
+      "0x1084158bb63ad2b11368aece4ab15f85175e567c"
+    ],
+    "owner": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+    "protocol": "creditloom-1",
+    "rows": [
+      {
+        "cells": [
+          {
+            "label": "YES",
+            "quote": "I originated the exhibition concept and designed its visitor journey.",
+            "reason": "Explicitly claims originating the concept and designing the approach.",
+            "role": "CONCEPT"
+          },
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly denies producing the artwork.",
+            "role": "MAKING"
+          },
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly denies testing the finished exhibition.",
+            "role": "VALIDATION"
+          }
+        ],
+        "member": "0xbc9bd70f71b88358d22a143273d824a5d38528e3"
+      },
+      {
+        "cells": [
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly states they did not originate the concept.",
+            "role": "CONCEPT"
+          },
+          {
+            "label": "YES",
+            "quote": "I created all six illustrations and built the exhibition website.",
+            "reason": "Explicitly claims producing the illustrations and implementing the website.",
+            "role": "MAKING"
+          },
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly states they did not test the completed website.",
+            "role": "VALIDATION"
+          }
+        ],
+        "member": "0x11cb2411b2537953bf96c912c51928564e846a5a"
+      },
+      {
+        "cells": [
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly states they did not originate the concept.",
+            "role": "CONCEPT"
+          },
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly states they did not produce the illustrations or website.",
+            "role": "MAKING"
+          },
+          {
+            "label": "YES",
+            "quote": "I tested the completed website on mobile and desktop and checked all exhibition captions for errors.",
+            "reason": "Explicitly claims testing and checking the deliverable for errors.",
+            "role": "VALIDATION"
+          }
+        ],
+        "member": "0x1084158bb63ad2b11368aece4ab15f85175e567c"
+      }
+    ],
+    "state": "PUBLISHED",
+    "statements": {
+      "0x1084158bb63ad2b11368aece4ab15f85175e567c": "I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.",
+      "0x11cb2411b2537953bf96c912c51928564e846a5a": "I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.",
+      "0xbc9bd70f71b88358d22a143273d824a5d38528e3": "I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition."
+    },
+    "title": "The Everyday Atlas"
+  },
+  "receipt": null
+}

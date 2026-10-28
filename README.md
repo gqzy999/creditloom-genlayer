@@ -1,5 +1,7 @@
 # CreditLoom
 
+[Open the application](https://gqzy999.github.io/creditloom-genlayer/) · [Contract](https://explorer-studio.genlayer.com/address/0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6) · [Network evidence](evidence/studionet.json) · [Project details](SUBMISSION.md)
+
 **Every contribution has a thread.** A shared credit desk for small creative collaborations: each invited wallet signs its own contribution, GenLayer reaches consensus on contribution roles, and every member must approve the same exact record before publication.
 
 ## Use the workspace

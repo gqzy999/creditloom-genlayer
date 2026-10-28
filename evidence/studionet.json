@@ -1,0 +1,868 @@
+{
+  "protocol": "creditloom-1",
+  "network": 61999,
+  "fullConsensus": true,
+  "fixture": "Synthetic exhibition; three controlled test wallets, not independent collaborators.",
+  "sourceSha256": "3269814cdc2faa7c47661ca0298f43ece98c9033639b34f20076c555465b1713",
+  "address": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+  "owner": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+  "id": "atlas-1793167572872",
+  "members": [
+    "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+    "0x11cb2411b2537953bf96c912c51928564e846a5a",
+    "0x1084158bb63ad2b11368aece4ab15f85175e567c"
+  ],
+  "steps": {
+    "01-deploy": {
+      "hash": "0x1e5a0e917b182f3df636bbde5d47e1cfd6c21d9e21f1bc5a2647964dbac8e425",
+      "method": "deploy",
+      "args": [],
+      "signer": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0xbC9bd70F71b88358D22a143273d824a5D38528E3",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "contract": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+          "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+          "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "null"
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "null"
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "02-open": {
+      "hash": "0xbef33d9255f1ae9272ee6f6f8764abe0181b0a5eecfa9c39c6ce2ec833d685da",
+      "method": "open_work",
+      "args": [
+        "atlas-1793167572872",
+        "The Everyday Atlas",
+        "A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.",
+        "[\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\",\"0x11cb2411b2537953bf96c912c51928564e846a5a\",\"0x1084158bb63ad2b11368aece4ab15f85175e567c\"]"
+      ],
+      "signer": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0xbC9bd70F71b88358D22a143273d824a5D38528E3",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+          "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[],\\\"state\\\":\\\"COLLECTING\\\",\\\"statements\\\":{},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[],\\\"state\\\":\\\"COLLECTING\\\",\\\"statements\\\":{},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "03-declare": {
+      "hash": "0x66dda3c77ba9ab5a1b455a69cc21e14e59553f62af65eeee9aeed31dca0fb750",
+      "method": "declare",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872",
+        "I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition."
+      ],
+      "signer": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0xbC9bd70F71b88358D22a143273d824a5D38528E3",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+          "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle",
+          "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+          "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[],\\\"state\\\":\\\"COLLECTING\\\",\\\"statements\\\":{\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[],\\\"state\\\":\\\"COLLECTING\\\",\\\"statements\\\":{\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "04-declare": {
+      "hash": "0x44296982641a47d8a969253ea0d411650ca990f76816f664ceaf2392b557d843",
+      "method": "declare",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872",
+        "I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website."
+      ],
+      "signer": "0x11cb2411b2537953bf96c912c51928564e846a5a",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0x11CB2411b2537953bF96c912c51928564E846A5A",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+          "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+          "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[],\\\"state\\\":\\\"COLLECTING\\\",\\\"statements\\\":{\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[],\\\"state\\\":\\\"COLLECTING\\\",\\\"statements\\\":{\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "05-declare": {
+      "hash": "0x2ff88e5cbbc3f93156f815bbf23c5e5af4c85824514e08bb07bb47a299792be8",
+      "method": "declare",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872",
+        "I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website."
+      ],
+      "signer": "0x1084158bb63ad2b11368aece4ab15f85175e567c",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0x1084158BB63ad2b11368aecE4aB15f85175e567c",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+          "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[],\\\"state\\\":\\\"COLLECTING\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[],\\\"state\\\":\\\"COLLECTING\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "06-duplicate-declaration-denied": {
+      "hash": "0x669696907d74828aea0d864b7bc0dfc2d11f11a0e0c93d1dd9245c71ad5cb0bb",
+      "method": "declare",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872",
+        "I now claim to have done everything in this exhibition."
+      ],
+      "signer": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0xbC9bd70F71b88358D22a143273d824a5D38528E3",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+          "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "ERROR",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "raw": "AVNUQVRFTUVOVF9JTU1VVEFCTEU=",
+              "status": "rollback",
+              "payload": "STATEMENT_IMMUTABLE"
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "ERROR",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "raw": "AVNUQVRFTUVOVF9JTU1VVEFCTEU=",
+              "status": "rollback",
+              "payload": "STATEMENT_IMMUTABLE"
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "07-weave": {
+      "hash": "0x843ee6dae19c6be332ceb90f4cd3c94958a06f9492b2b4b2334f07b2a404107f",
+      "method": "weave",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872"
+      ],
+      "signer": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0xbC9bd70F71b88358D22a143273d824a5D38528E3",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+          "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"AWAITING_APPROVAL\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"AWAITING_APPROVAL\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "08-early-publication-denied": {
+      "hash": "0xfc93e6e734059095559aa19426a968f7cc78dedcc6fc46f67e7571ccf1ca60d8",
+      "method": "publish",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872"
+      ],
+      "signer": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0xbC9bd70F71b88358D22a143273d824a5D38528E3",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+          "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle"
+        },
+        "leaders": [
+          {
+            "execution_result": "ERROR",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "raw": "AVVOQU5JTU9VU19BUFBST1ZBTF9SRVFVSVJFRA==",
+              "status": "rollback",
+              "payload": "UNANIMOUS_APPROVAL_REQUIRED"
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "ERROR",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "raw": "AVVOQU5JTU9VU19BUFBST1ZBTF9SRVFVSVJFRA==",
+              "status": "rollback",
+              "payload": "UNANIMOUS_APPROVAL_REQUIRED"
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "09-wrong-digest-denied": {
+      "hash": "0x1da2721fd78912fa57b28204ab4542d35dec8f46a3f1523b320d1476129caf4f",
+      "method": "approve",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872",
+        "0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "signer": "0x11cb2411b2537953bf96c912c51928564e846a5a",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0x11CB2411b2537953bF96c912c51928564E846A5A",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+          "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle"
+        },
+        "leaders": [
+          {
+            "execution_result": "ERROR",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "raw": "AURJR0VTVF9NSVNNQVRDSA==",
+              "status": "rollback",
+              "payload": "DIGEST_MISMATCH"
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "ERROR",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "raw": "AURJR0VTVF9NSVNNQVRDSA==",
+              "status": "rollback",
+              "payload": "DIGEST_MISMATCH"
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "10-approve": {
+      "hash": "0xc5b5d223dfc13247694707b4ae15e591485d39d230dec33731740b757ada8162",
+      "method": "approve",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872",
+        "d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0"
+      ],
+      "signer": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0xbC9bd70F71b88358D22a143273d824a5D38528E3",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"AWAITING_APPROVAL\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"AWAITING_APPROVAL\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "11-approve": {
+      "hash": "0xb1a590764d4b4990cdf511b2a9dc752d03a6b2a046883c0f98d8d18ee9f8ea98",
+      "method": "approve",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872",
+        "d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0"
+      ],
+      "signer": "0x11cb2411b2537953bf96c912c51928564e846a5a",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0x11CB2411b2537953bF96c912c51928564E846A5A",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+          "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+          "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"AWAITING_APPROVAL\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"AWAITING_APPROVAL\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "12-approve": {
+      "hash": "0x4bca49bf3174757300268f4771ec62ce6c548e56fee1defe5db4bba7712c169f",
+      "method": "approve",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872",
+        "d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0"
+      ],
+      "signer": "0x1084158bb63ad2b11368aece4ab15f85175e567c",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0x1084158BB63ad2b11368aecE4aB15f85175e567c",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+          "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"AWAITING_APPROVAL\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"AWAITING_APPROVAL\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    },
+    "13-publish": {
+      "hash": "0xce8bcf8a021c0c4eb27e3f93d8ed111cbcfdd433e1b8db49de5c48322139b7a1",
+      "method": "publish",
+      "args": [
+        "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+        "atlas-1793167572872"
+      ],
+      "signer": "0x1084158bb63ad2b11368aece4ab15f85175e567c",
+      "receipt": {
+        "status": 7,
+        "result": 6,
+        "from": "0x1084158BB63ad2b11368aecE4aB15f85175e567c",
+        "to": "0x28674A7695E31Cea2A97206345b5eFe60B0ecFA6",
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+          "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+        },
+        "leaders": [
+          {
+            "execution_result": "SUCCESS",
+            "mode": "leader",
+            "vote": null,
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"PUBLISHED\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          },
+          {
+            "execution_result": "SUCCESS",
+            "mode": "validator",
+            "vote": "agree",
+            "result": {
+              "status": "return",
+              "readable": "\"{\\\"approvals\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"context\\\":\\\"A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.\\\",\\\"digest\\\":\\\"d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0\\\",\\\"id\\\":\\\"atlas-1793167572872\\\",\\\"members\\\":[\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\",\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"],\\\"owner\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\",\\\"protocol\\\":\\\"creditloom-1\\\",\\\"rows\\\":[{\\\"cells\\\":[{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I originated the exhibition concept and designed its visitor journey.\\\",\\\"reason\\\":\\\"Explicitly claims originating the concept and designing the approach.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies producing the artwork.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly denies testing the finished exhibition.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I created all six illustrations and built the exhibition website.\\\",\\\"reason\\\":\\\"Explicitly claims producing the illustrations and implementing the website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not test the completed website.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\"},{\\\"cells\\\":[{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not originate the concept.\\\",\\\"role\\\":\\\"CONCEPT\\\"},{\\\"label\\\":\\\"NO\\\",\\\"quote\\\":\\\"\\\",\\\"reason\\\":\\\"Explicitly states they did not produce the illustrations or website.\\\",\\\"role\\\":\\\"MAKING\\\"},{\\\"label\\\":\\\"YES\\\",\\\"quote\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors.\\\",\\\"reason\\\":\\\"Explicitly claims testing and checking the deliverable for errors.\\\",\\\"role\\\":\\\"VALIDATION\\\"}],\\\"member\\\":\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\"}],\\\"state\\\":\\\"PUBLISHED\\\",\\\"statements\\\":{\\\"0x1084158bb63ad2b11368aece4ab15f85175e567c\\\":\\\"I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.\\\",\\\"0x11cb2411b2537953bf96c912c51928564e846a5a\\\":\\\"I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.\\\",\\\"0xbc9bd70f71b88358d22a143273d824a5d38528e3\\\":\\\"I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition.\\\"},\\\"title\\\":\\\"The Everyday Atlas\\\"}\""
+            },
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            }
+          }
+        ]
+      },
+      "done": true
+    }
+  },
+  "record": {
+    "approvals": [
+      "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "0x11cb2411b2537953bf96c912c51928564e846a5a",
+      "0x1084158bb63ad2b11368aece4ab15f85175e567c"
+    ],
+    "context": "A small online exhibition: six illustrated stories about overlooked places, presented on a responsive website.",
+    "digest": "d19836beee018eb9469db5fd240d286a26d56640de70d138741f8467a876c6e0",
+    "id": "atlas-1793167572872",
+    "members": [
+      "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+      "0x11cb2411b2537953bf96c912c51928564e846a5a",
+      "0x1084158bb63ad2b11368aece4ab15f85175e567c"
+    ],
+    "owner": "0xbc9bd70f71b88358d22a143273d824a5d38528e3",
+    "protocol": "creditloom-1",
+    "rows": [
+      {
+        "cells": [
+          {
+            "label": "YES",
+            "quote": "I originated the exhibition concept and designed its visitor journey.",
+            "reason": "Explicitly claims originating the concept and designing the approach.",
+            "role": "CONCEPT"
+          },
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly denies producing the artwork.",
+            "role": "MAKING"
+          },
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly denies testing the finished exhibition.",
+            "role": "VALIDATION"
+          }
+        ],
+        "member": "0xbc9bd70f71b88358d22a143273d824a5d38528e3"
+      },
+      {
+        "cells": [
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly states they did not originate the concept.",
+            "role": "CONCEPT"
+          },
+          {
+            "label": "YES",
+            "quote": "I created all six illustrations and built the exhibition website.",
+            "reason": "Explicitly claims producing the illustrations and implementing the website.",
+            "role": "MAKING"
+          },
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly states they did not test the completed website.",
+            "role": "VALIDATION"
+          }
+        ],
+        "member": "0x11cb2411b2537953bf96c912c51928564e846a5a"
+      },
+      {
+        "cells": [
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly states they did not originate the concept.",
+            "role": "CONCEPT"
+          },
+          {
+            "label": "NO",
+            "quote": "",
+            "reason": "Explicitly states they did not produce the illustrations or website.",
+            "role": "MAKING"
+          },
+          {
+            "label": "YES",
+            "quote": "I tested the completed website on mobile and desktop and checked all exhibition captions for errors.",
+            "reason": "Explicitly claims testing and checking the deliverable for errors.",
+            "role": "VALIDATION"
+          }
+        ],
+        "member": "0x1084158bb63ad2b11368aece4ab15f85175e567c"
+      }
+    ],
+    "state": "PUBLISHED",
+    "statements": {
+      "0x1084158bb63ad2b11368aece4ab15f85175e567c": "I tested the completed website on mobile and desktop and checked all exhibition captions for errors. I did not originate the concept or produce the illustrations or website.",
+      "0x11cb2411b2537953bf96c912c51928564e846a5a": "I created all six illustrations and built the exhibition website. I did not originate the concept or test the completed website.",
+      "0xbc9bd70f71b88358d22a143273d824a5d38528e3": "I originated the exhibition concept and designed its visitor journey. I did not produce the artwork or test the finished exhibition."
+    },
+    "title": "The Everyday Atlas"
+  },
+  "error": null
+}
