@@ -17,6 +17,16 @@
 
 Temporary signing keys exist only in the current page's memory. Reloading loses signing access; save the public work reference first. Use an injected wallet for continuing collaborations. Never send funds to temporary addresses.
 
+## Publication handoff workspace (v1.1)
+
+After loading a published record, scroll to **Take the credit record with you** and select **Prepare loaded publication**. The application checks the contract-compatible record digest and all member/role/approval invariants, verifies deployed source, and matches the complete record against fresh finalized chain state.
+
+Download a portable JSON package, an attribution block in Markdown, or a standalone printable HTML credit sheet. The credit sheet includes role evidence, public wallet addresses, the record digest and a reproducible contract/owner/work reference. It contains no scripts, external fonts, network requests or wallet access. Contributor order follows the agreed member list and is not a ranking.
+
+The same workspace accepts an existing **Export record** JSON or a publication package (up to 1 MiB). Every import starts as **Snapshot integrity checked** even if the file claims prior verification. Choose **Verify package on chain** to authenticate its saved publication state against the source-verified contract. Digest checks alone cannot prove approvals: approvals and publication state are outside the contract's signed-content digest, so the online check compares the entire finalized record.
+
+See [release changes and reproduction steps](MILESTONE.md).
+
 ## Why GenLayer is central
 
 Natural-language statements express actions in many ways. Validators independently interpret each person's own statement under the same fixed role definitions. All nine labels in a three-person collaboration must agree; explanations may vary. Exact quotations are checked against that member's signed statement. A malformed output, missing YES evidence or disagreement cannot open approval.
