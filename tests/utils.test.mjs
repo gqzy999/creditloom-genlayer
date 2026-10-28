@@ -1,7 +1,14 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {success,failure,readiness,escape,addressOK} from '../src/utils.js';
+import {test} from 'node:test';import assert from 'node:assert/strict';import {success,failure,readiness,escape,addressOK,matchesReadback} from '../src/utils.js';
 const tx={status:7,result:6,consensus_data:{leader_receipt:[{mode:'leader',execution_result:'SUCCESS'}]}};
 test('finalization requires successful leader and agreeing outcome',()=>{assert.ok(success(tx));assert.ok(!success({...tx,status:5}));assert.ok(!success({...tx,result:7}));assert.ok(!success({...tx,consensus_data:{leader_receipt:[{mode:'leader',execution_result:'ERROR'}]}}));});
 test('terminal error distinguished from pending',()=>{assert.ok(failure({...tx,result:7}));assert.ok(!failure({...tx,status:5,result:null}));});
 test('every person needs a supported role and no uncertainty',()=>{const members=['a','b'];const row={cells:[{label:'YES'},{label:'NO'},{label:'NO'}]};assert.ok(readiness({members,rows:[row,row]}));assert.ok(!readiness({members,rows:[row]}));assert.ok(!readiness({members,rows:[row,{cells:[{label:'NO'},{label:'NO'},{label:'NO'}]}]}));assert.ok(!readiness({members,rows:[row,{cells:[{label:'YES'},{label:'UNCLEAR'},{label:'NO'}]}]}));});
 test('untrusted contributor text stays escaped',()=>assert.equal(escape('<img src=x onerror="x">'),'&lt;img src=x onerror=&quot;x&quot;&gt;'));
 test('nonzero wallet addresses only',()=>{assert.ok(addressOK('0x'+'a'.repeat(40)));assert.ok(!addressOK('0x'+'0'.repeat(40)));});
+
+const owner='0x'+'a'.repeat(40), member='0x'+'b'.repeat(40);
+const intent={owner,from:owner,id:'atlas',method:'open_work',args:['atlas',' Atlas ',' A collaborative exhibition. ',JSON.stringify([owner,member])]};
+const work={protocol:'creditloom-1',owner,id:'atlas',title:'Atlas',context:'A collaborative exhibition.',members:[owner,member],state:'COLLECTING'};
+test('creation recovery accepts a matching work after later member actions',()=>{for(const state of ['COLLECTING','AWAITING_APPROVAL','NEEDS_CLARITY','PUBLISHED'])assert.ok(matchesReadback({...work,state},intent));});
+test('creation recovery rejects a different immutable work',()=>{for(const change of [{id:'other'},{owner:member},{title:'Other'},{context:'Different exhibition.'},{members:[member,owner]},{state:'UNKNOWN'}])assert.ok(!matchesReadback({...work,...change},intent));assert.ok(!matchesReadback(work,{...intent,args:[...intent.args.slice(0,3),'invalid']}));});
+test('method recovery requires the signer statement, exact approval digest and terminal publication',()=>{assert.ok(matchesReadback({...work,statements:{[member]:'I tested the work.'}},{...intent,from:member,method:'declare',args:[owner,'atlas','I tested the work.']}));assert.ok(!matchesReadback({...work,approvals:[member],digest:'right'},{...intent,from:member,method:'approve',args:[owner,'atlas','wrong']}));assert.ok(!matchesReadback(work,{...intent,method:'publish'}));assert.ok(matchesReadback({...work,state:'PUBLISHED'},{...intent,method:'publish'}));});

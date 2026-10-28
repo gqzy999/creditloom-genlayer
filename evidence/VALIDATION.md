@@ -1,15 +1,21 @@
-# Verification boundaries
+# Verification
 
-The frontend guard suite has 5 passing tests. The Python mocked-host suite has 18 passing tests covering membership, statement immutability, complete-input guards, independent validator disagreement, exact quote checks, full-matrix order, unclear/empty attribution, digest binding, all-member approval and terminal publication. These tests do not execute the real GenVM or prove model accuracy.
+## Automated checks
 
-The Vite production build passes. Browser checks cover the authored example's three approvals and publication, member/role inspection, and isolation of the live workspace from illustrative records. Live network receipts and exact finalized readback are recorded in `studionet.json`; only confirmed results in that file are evidence of network execution.
+Eight frontend guard tests and eighteen mocked-host contract tests pass. They cover finalized execution guards, membership, immutable declarations, full-matrix ordering, exact quotation checks, independent validator disagreement, unclear and empty attribution, digest binding, unanimous approval and terminal publication. Receipt recovery accepts a matching immutable work even when other members have already advanced its state, and rejects a different work. These checks do not prove model accuracy or real network consensus. The production build passes.
 
-The network fixture uses three test wallets controlled by one operator and a synthetic creative work. It does not demonstrate independent human identity or authenticate an exhibition. No user's private keys are requested, exported or included. All writes use Stable Studionet (61999), full consensus and zero transferred value. `network.html` and `mobile.html` are local development utilities excluded from the production build.
+## Published network example
 
-## Confirmed network result
+`studionet.json` records thirteen finalized transactions on Stable Studionet (61999). Successful calls have MAJORITY_AGREE and successful leader execution. Three rejection cases cover replacing a declaration, publishing before unanimous approval and approving the wrong digest. The accepted role matrix is diagonal: Concept, Making and Validation. The final record contains all three approvals and is PUBLISHED.
 
-The 13 transactions in `studionet.json` are finalized. Successful steps have MAJORITY_AGREE and successful leader execution. Three negative-path transactions confirm rejection of replacement declarations, premature publication and the wrong digest. The live role matrix is diagonal: first member CONCEPT, second MAKING, third VALIDATION. All three member approvals exist and the final readback is PUBLISHED.
+The source SHA-256 in `public/deployment.json` matches the bundled contract. The published record digest matches its immutable fields. `live-readback.json` contains a finalized application readback and the selected contract, owner and work ID.
 
-The application itself submitted a separate `open_work` transaction from a generated temporary signer: `0x26658c36751a08bc91525905ab52ae9e9ec5189c16ca75a9a9931fe955f51b2d`. It finalized with majority agreement. An initial readback failed when the frontend used a lowercase contract address; standardizing RPC target addresses to EIP-55 with viem `getAddress` repaired the read. **Resume tracking** then validated the same receipt and returned the exact COLLECTING record without a second submission. This is a browser test of opening/recovery, not a complete multi-person injected-wallet test. Injected OKX/MetaMask signing has not been tested in this environment.
+The fixture is a synthetic creative work with three controlled test wallets. It does not establish independent people or authenticate an exhibition. Signed declarations are the authoritative inputs for this bounded workflow; linked external sources are not fetched.
 
-The responsive page was inspected at desktop width and through a 390-pixel iframe. No claim of testing every physical mobile device is made.
+## Browser checks
+
+The deployed GitHub Pages application supports direct access, published-example reading and JSON export. The authored walkthrough supports contributor inspection, three approvals and example publication; it is labelled separately from chain records. A separate application-submitted `open_work` transaction, `0x26658c36751a08bc91525905ab52ae9e9ec5189c16ca75a9a9931fe955f51b2d`, finalized with majority agreement. Resume tracking validated that same transaction and matching state without a second submission.
+
+Browser signing and recovery evidence uses a temporary zero-gas signer. It does not cover the complete multi-person flow with injected OKX or MetaMask wallets. Responsive layout was inspected at desktop and 390-pixel widths; this is not a claim of testing every physical mobile device.
+
+`network.html` and `scripts/network.js` are reproducible local network-check tools excluded from the production build. Their generated test keys stay in browser session storage and are excluded from public evidence exports. No user's private keys are requested or included in the repository. All network writes transfer zero value and use full consensus.

@@ -1,5 +1,5 @@
 import './style.css';
-import {escape as e,short,json,addressOK,success,failure,readiness} from './utils.js';
+import {escape as e,short,json,addressOK,success,failure,readiness,matchesReadback} from './utils.js';
 import {reader,source,verify,connect,temporary,check,read,wait,bind} from './chain.js';
 const roleNames=['Concept & direction','Making & implementation','Review & validation'];
 const names=['Mira','Sol','Jun'];
@@ -38,9 +38,9 @@ function paint(){
  document.querySelectorAll('[data-person]').forEach(b=>b.onclick=()=>{selected=Number(b.dataset.person);paint();});
  $('#pending-box').hidden=!pending;if(pending?.hash)$('#hash').value=pending.hash;
  for(const id of ['open','declare','weave','approve','publish','connect','temporary'])$('#'+id).disabled=busy||!!pending;
- $('#resume').disabled=busy;
+ $('#resume').disabled=busy;$('#practice').disabled=busy;$('#live').disabled=busy;
 }
-function mode(value){live=value;chainLoaded=false;chainSelection=null;lastReceipt=null;$('#live-controls').hidden=!live;$('#practice').classList.toggle('active',!live);$('#live').classList.toggle('active',live);$('#mode-note').textContent=live?'LIVE WORKSPACE · Reads come from Stable Studionet. Writes require wallet signatures and finalized consensus.':'AUTHORED WALKTHROUGH · Illustrative people and prewritten classifications. No chain transactions.';record=structuredClone(example);selected=0;paint();}
+function mode(value){if(busy)return;live=value;chainLoaded=false;chainSelection=null;lastReceipt=null;$('#live-controls').hidden=!live;$('#practice').classList.toggle('active',!live);$('#live').classList.toggle('active',live);$('#mode-note').textContent=live?'LIVE WORKSPACE · Reads come from Stable Studionet. Writes require wallet signatures and finalized consensus.':'AUTHORED WALKTHROUGH · Illustrative people and prewritten classifications. No chain transactions.';record=structuredClone(example);selected=0;paint();}
 $('#practice').onclick=()=>mode(false);$('#live').onclick=()=>mode(true);
 $('#demoapprove').onclick=()=>{if(record.approvals.length<record.members.length)record.approvals.push(record.members[record.approvals.length]);else record.state='PUBLISHED';paint();};
 async function load(){const f=fields();await verify(f.address);record=await read(f.address,f.owner,f.id);chainLoaded=true;chainSelection={...f};lastReceipt=null;selected=0;paint();return record;}
@@ -52,7 +52,7 @@ $('#connect').onclick=attempt(async()=>{wallet=await connect();walletInfo();if(!
 $('#temporary').onclick=()=>{if(pending)return;wallet=temporary();walletInfo();$('#owner').value=wallet.owner;$('#members').value=wallet.owner+'\n';notice('Temporary zero-gas signer ready. Add another contributor’s wallet address.');};
 function savePending(p){pending=p;if(p)localStorage.setItem(pendingKey,JSON.stringify(p));else localStorage.removeItem(pendingKey);paint();}
 async function track(){if(!pending?.hash)throw Error('Paste the exact existing transaction hash before resuming.');notice('Tracking '+pending.hash+' · waiting for FINALIZED…');let tx;try{tx=await wait(pending.hash);}catch(err){throw Error('Receipt tracking: '+(err.shortMessage||err.message));}try{bind(tx,pending);}catch(err){throw Error('Receipt binding: '+err.message);}if(!success(tx)){if(failure(tx))savePending(null);throw Error('Transaction did not execute successfully with majority agreement.');}const p=pending;try{record=await read(p.address,p.owner,p.id);}catch(err){throw Error('Finalized state readback: '+(err.shortMessage||err.message));}chainLoaded=true;chainSelection={address:p.address,owner:p.owner,id:p.id};
- const matched=p.method==='open_work'?record.state==='COLLECTING':p.method==='declare'?record.statements[p.from]===p.args[2]:p.method==='weave'?record.rows.length===record.members.length:p.method==='approve'?record.approvals.includes(p.from)&&record.digest===p.args[2]:p.method==='publish'?record.state==='PUBLISHED':false;
+ const matched=matchesReadback(record,p);
  if(!matched)throw Error('Receipt finalized but expected state is not visible. Resume tracking after chain reads recover.');lastReceipt=tx;selected=0;savePending(null);notice('FINALIZED · MAJORITY_AGREE · successful execution and matching chain readback.');}
 async function send(method,args){if(pending)throw Error('Resolve the pending transaction first.');await check(wallet);const f=fields();await verify(f.address);if(!addressOK(f.owner)||!f.id)throw Error('Enter owner and work ID.');const p={...f,address:f.address.toLowerCase(),from:wallet.owner,method,args};savePending(p);notice('Waiting for signature…');try{p.hash=await wallet.client.writeContract({address:p.address,functionName:method,args,value:0n,leaderOnly:false});savePending(p);}catch(err){if(err.code===4001||err.cause?.code===4001)savePending(null);throw err;}await track();}
 $('#open').onclick=attempt(async()=>{if(!wallet)throw Error('Connect a wallet.');$('#owner').value=wallet.owner;const f=fields();const members=$('#members').value.split(/[\s,]+/).filter(Boolean);if(members.length<2||members.length>5||members.some(m=>!addressOK(m))||new Set(members.map(m=>m.toLowerCase())).size!==members.length||!members.some(m=>m.toLowerCase()===wallet.owner))throw Error('Use 2–5 distinct addresses including your signer.');await send('open_work',[f.id,$('#title').value,$('#context').value,JSON.stringify(members)]);});

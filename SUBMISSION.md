@@ -51,9 +51,9 @@ The authoritative inputs for this bounded workflow are statements signed by the 
 - Published example ID: `atlas-1793167572872`
 - Publication transaction: `0xce8bcf8a021c0c4eb27e3f93d8ed111cbcfdd433e1b8db49de5c48322139b7a1`
 - 13 finalized network transactions cover the complete lifecycle plus replacement-declaration, early-publication and wrong-digest rejection.
-- 18 mocked-host contract tests and 5 frontend guard tests pass. The production build passes.
+- 18 mocked-host contract tests and 8 frontend guard tests pass. The production build passes.
 - The fixture is a synthetic creative work with three controlled test wallets. It does not establish independent people or authenticate an exhibition.
-- The deployed application has been checked for direct access and successful published-example readback. Browser submission and recovery were tested with a temporary zero-gas signer; injected OKX/MetaMask signing remains unverified in this environment.
+- The deployed application has been checked for direct access and successful published-example readback. Browser submission and recovery were tested with a temporary zero-gas signer; the published evidence does not cover injected OKX/MetaMask signing.
 
 ## Continued use
 
